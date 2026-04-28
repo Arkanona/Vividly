@@ -30,7 +30,7 @@ a {
 
 img {
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 /* Header */
@@ -179,9 +179,15 @@ header i {
 
 .div-pro {
     background-color: var(--yellow);
+    padding: 0 15px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+#div-image {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 15px;
     gap: 20px;
 }
 
@@ -194,10 +200,12 @@ header i {
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 465px;
 }
 
-.div-pro img {
+.div-pro article > img {
     border-radius: 20px 20px 0 0;
+    height: 140px;
 }
 
 .div-pro a {
@@ -275,3 +283,9 @@ footer a:hover {
     color: var(--orange);
 }
 
+@media  screen and (max-width: 767px) {
+    #div-image {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
