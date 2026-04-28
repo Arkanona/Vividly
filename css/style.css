@@ -1,0 +1,170 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+
+/* Général */
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blackgrey:#252525;
+    --orange:#ff7800;
+    --yellow:#ffae00;
+    --black:#000;
+    --white:#fff;
+}
+
+body {
+    padding: 0 15px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+
+
+
+header {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    justify-content: center;
+}
+
+header ul {
+    display: none;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    color:var(--black);
+    position: absolute;
+    right: 10px;
+}
+
+/* Main */
+
+#section-find {
+    background-color:var(--yellow);
+}
+
+#section-find article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    padding: 25px 10px;
+    flex-direction: column;
+    max-width: 496px;
+    margin: auto;
+}
+
+#section-find h2 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#section-find p {
+    font-family: "Open Sans", sans-serif;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: light;
+}
+
+#section-find form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#section-find input {
+    border: 1px solid var(--yellow);
+    background-color:var(--yellow);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.212);
+    border-radius: 12px;
+    padding: 5px;
+    width: 100%;
+
+    &::placeholder{
+        color: #000;
+    }
+}
+
+#section-find button {
+    border: 1px solid var(--yellow);
+    background:linear-gradient(to top,var(--yellow), var(--orange));
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.134);
+    padding: 5px;
+    max-width: 125px;
+}
+
+#section-work {
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 13px;
+}
+
+footer ul {
+    padding: 0 15px;
+}
+
+footer h2 {
+    font-family: "Shrikhand", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 15px 25px 15px;
+}
+
+footer a, footer h2 {
+    color: var(--white);
+}
+
+footer a:hover {
+    transition: all 0.3s ease-in-out;
+    color: var(--orange);
+}
+
