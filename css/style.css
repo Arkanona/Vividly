@@ -133,6 +133,12 @@ header i {
 #functioning {
     padding: 25px 0;
 }
+
+#functioning {
+    max-width: 990px;
+    margin: auto;
+}
+
 #functioning ol{
     display: flex;
     flex-direction: column;
@@ -177,12 +183,17 @@ header i {
     padding: 10px;
 }
 
-.div-pro {
+#section-last {
     background-color: var(--yellow);
+}
+
+.div-pro {
     padding: 0 15px;
     flex-wrap: wrap;
     display: flex;
     gap: 20px;
+    max-width: 960px;
+    margin: auto;
 }
 
 #div-image {
@@ -223,11 +234,13 @@ header i {
 
 .div-pro form {
     display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--yellow);
+    gap: 190px;
+    padding-top: 10px;
 }
 
 .div-pro form p {
-    border-top: 1px solid var(--orange);
-    padding-top: 10px;
     font-size: 15px;
     font-weight: 300;
     font-style: light;
@@ -283,9 +296,56 @@ footer a:hover {
     color: var(--orange);
 }
 
-@media  screen and (max-width: 767px) {
+@media  screen and (min-width: 400px) {
     #div-image {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .div-pro > div > article {
+        flex: 1 0 48%;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    header ul {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        right: 90px;
+        list-style: none;
+    }
+
+    header a {
+        color: #000;
+    }
+
+    header > nav > a .fa-solid {
+        display: none;
+    }
+
+    #div-image {
+        justify-content: center;
+    }
+
+    .div-pro {
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer div {
+        display: flex;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
 }
