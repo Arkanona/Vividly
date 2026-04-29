@@ -1,0 +1,146 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+
+/* Général */
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blackgrey:#252525;
+    --orange:#ff7800;
+    --yellow:#ffae00;
+    --black:#000;
+    --white:#fff;
+}
+
+body {
+    /* padding: 0 15px; */
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+
+
+
+header {
+    display: flex;
+    padding: 20px 15px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: none;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    color:var(--black);
+}
+
+/* Main */
+
+#section-first form {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--yellow);
+    padding: 10px 15px;
+}
+
+#section-first h2 {
+    padding: 10px 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#section-first label img {
+    width: 20px;
+}
+
+#section-two {
+    padding-bottom: 10px;
+}
+
+#section-two div {
+    padding: 25px 15px;
+    border-top: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+#section-two h2 {
+    padding-bottom: 15px;
+}
+
+#section-three {
+    padding: 15px;
+}
+
+#section-three div {
+    padding: 15px 0;
+}
+
+#section-three iframe {
+    width: 100%;
+    margin: auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 13px;
+}
+
+footer ul {
+    padding: 0 15px;
+}
+
+footer h2 {
+    font-family: "Shrikhand", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 15px 25px 15px;
+}
+
+footer a, footer h2 {
+    color: var(--white);
+}
+
+footer a:hover {
+    transition: all 0.3s ease-in-out;
+    color: var(--orange);
+}
