@@ -8,8 +8,8 @@
     <title>Vividly</title>
 </head>
 <body>
-    <header>
-        <a href="#">
+    <header class="fade">
+        <a href="/">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
         <a href="/"><h1>Vividly</h1></a>
@@ -25,14 +25,14 @@
             </nav>
     </header>
 
-    <main>
+    <main class="fade">
         <section id="section-first">
             <img src="image/constructeur1.jpg" alt="Un constructeur">
             <h2>Smith & Sons Construction Co.</h2>
             <form action="#">
                 <p>Recommand this professionnal</p>
                 <label for="like" class="likez">
-                    <input type="checkbox" id="like"><img src="image/thumbs-up-regular.svg" alt="like">
+                    <input type="checkbox" id="like"><img class="empty" src="image/thumbs-up-regular.svg" alt="like"><img class="full" src="image/thumbs-up-solid.svg" alt="like">
                 </label>
             </form>
         </section>
@@ -55,8 +55,12 @@
             <div>
                 <h2>Contact us</h2>
                 <ul>
+                    <li>
                     <a href="tel:0666666666"><i class="fa-solid fa-mobile"></i> Call us now !</a>
+                    </li>
+                    <li>
                     <a href="mailto:mail@mail.com"><i class="fa-solid fa-envelope"></i> Send us an email</a>
+                    </li>
                 </ul>
                 <article>
                     <h3>Follow us</h3>
@@ -70,7 +74,7 @@
                     <input type="text" placeholder="Your name">
                     <input type="text" placeholder="Your email">
                     <input type="text" placeholder="Your phone">
-                    <input type="text" placeholder="Your message" id="message">
+                    <textarea rows="8" placeholder="Your message"></textarea>
                     <div>
                         <label for="accept"><input type="checkbox" id="accept" name="politics"> I accept the politic of confidentiality</label>
                     </div>
@@ -80,7 +84,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="fade">
         <h2>Vividly</h2>
         <div>
             <ul>

@@ -33,6 +33,17 @@ img {
     object-fit: cover;
 }
 
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade {
+  opacity: 1;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
 /* Header */
 
 
@@ -129,10 +140,20 @@ header i {
             padding: 40px 0;
             gap: 20px;
 
+            li {
+                list-style: none;
+            }
+
                 a {
                     font-size: 15px;
                     font-weight: 300;
                     color: var(--black);
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        color: var(--yellow);
+                        transition: all 0.3s ease-in-out;
+                    }
 
                     i {
                         color: var(--yellow);
@@ -150,10 +171,16 @@ header i {
                     justify-content: space-around;
                     list-style: none;
                     padding: 10px 0;
+                    transition: all 0.3s ease-in-out;
 
                     i {
                         color: var(--black);
                         font-size: 20px;
+
+                        &:hover{
+                        transition: all 0.3s ease-in-out;
+                        color: var(--yellow);
+                        }
                     }
                 }
             }
@@ -166,40 +193,60 @@ header i {
                 
                 input {
                     border: 1px solid var(--orange);
-                    padding: 5px;                  
+                    padding: 5px;
+                    outline: none;                  
                 }
 
-                #message {
-                    padding-bottom: 80px;
+                textarea {
+                    border: 1px solid var(--orange);
+                    padding: 5px;
+                    resize: none;
+                    outline: none;
                 }
                 
                 ::placeholder {
                     color: var(--black);
+                    font-family: "Open Sans", sans-serif;
                 }
 
                 label {
-                        font-size: 13px;
-                        font-weight: 400;
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        padding: 15px 0;
+                    font-size: 13px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 15px 0;
+                        
                 }
 
             }
 
             button {
-                    background:linear-gradient(to top,var(--yellow), var(--orange));
-                    border: 1px solid var(--yellow);
-                    border-radius: 30px;
-                    width: 93px;
-                    padding: 5px;
-                    margin: auto;
-                    font-size: 13px;
-                    font-weight: 500;
+                background:linear-gradient(to top,var(--yellow), var(--orange));
+                border: 1px solid var(--yellow);
+                border-radius: 30px;
+                width: 93px;
+                padding: 5px;
+                margin: auto;
+                font-size: 13px;
+                font-weight: 500;
+                cursor: pointer;
             }
     }
 }
+
+
+
+
+/* Animation Like */
+
+/* .empty
+
+.full
+
+input[type="checkbox"]:checked + .full
+
+@keyframes thumbfull */
 
 
 /* Footer */
