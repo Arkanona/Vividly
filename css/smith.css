@@ -234,3 +234,85 @@ footer a:hover {
     color: var(--orange);
 }
 
+@media screen and (min-width: 768px) {
+    #section-two div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #section-three {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: auto;
+        }
+    }
+
+    #section-four {
+
+        > div {
+            display: flex;
+            flex-direction: column;
+        
+            > h2 {
+            margin: auto;
+            }
+
+            > ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            article h3 {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 1440px;
+        margin: auto;
+
+        ul {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        right: 50px;
+        list-style: none;
+
+        a {
+            color: var(--black);
+        }
+        }
+
+        nav > a > i {
+            display: none!important;
+        }
+    }
+
+    main {
+        max-width: 990px;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+
+        div {
+            display: flex;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+            }
+        }
+    }
+}
