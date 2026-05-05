@@ -222,6 +222,61 @@ header i {
 
 #section-last {
     background-color: var(--yellow);
+
+    article {
+
+    position: relative;
+
+    }
+
+    .new::after {
+            content: 'New !';
+            position: absolute;
+            top: 8px;
+            left: -14px;
+            transform: rotate(-43deg);
+            width: 74px;
+            background-color: var(--orange);
+            color: var(--white);
+            padding: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Shrikhand", serif;
+            text-align: center;
+        }
+
+    label {
+        display: flex;
+        justify-content: space-between;
+        caret-color: transparent;
+        cursor: pointer;
+
+        &:hover .empty {
+            display: none;
+            transition: ease-in-out 1s;
+        }
+
+        &:hover .full {
+            display: inline;
+            transition: ease-in-out 1s;
+        }
+
+        input {
+            appearance: none;
+        }
+
+        .full {
+            display: none;
+        }
+
+        input:checked ~ .empty {
+            display: none;
+        }
+
+        input:checked ~ .full {
+            display: inline;
+        }
+    }
 }
 
 .div-pro {

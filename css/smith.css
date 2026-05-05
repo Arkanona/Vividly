@@ -97,6 +97,40 @@ header i {
     width: 20px;
 }
 
+#section-first label {
+    display: flex;
+    justify-content: space-between;
+    caret-color: transparent;
+    cursor: pointer;
+
+    &:hover .empty {
+        display: none;
+        transition: ease-in-out 1s;
+    }
+
+    &:hover .full {
+        display: inline;
+        transition: ease-in-out 1s;
+    }
+
+    input {
+        appearance: none;
+    }
+
+    .full {
+        display: none;
+    }
+
+    input:checked ~ .empty {
+        display: none;
+    }
+
+    input:checked ~ .full {
+        display: inline;
+    }
+
+}
+
 #section-two {
     padding-bottom: 10px;
 }
